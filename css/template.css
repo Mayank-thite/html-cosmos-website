@@ -1,0 +1,185 @@
+/* Mayank Thite #8835161 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+figure,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply box-sizing border-box to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* get smooth scroll effect on pages when navigating to a section*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set default font and background color */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* main container  */
+.container {
+  margin: 0 auto;
+}
+
+/* Header */
+.above-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000823;
+  color: #fff;
+  padding: 20px;
+}
+
+.above-header img {
+  max-width: 20%;
+  height: auto;
+}
+
+.above-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-left: -50px;
+}
+
+.above-header p {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #002949;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #ffae00;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.submenu:hover .sub-menu {
+  display: block;
+}
+
+.submenu .sub-menu li {
+  width: 100%;
+  text-align: left;
+}
+
+.submenu .sub-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.submenu .sub-menu li a:hover {
+  color: #ffae00;
+}
+
+/* Footer */
+.footer {
+    color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .menu-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #272727;
+  }
+  
+  .menu-column {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .menu-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .menu-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-column ul li {
+    margin: 5px 0;
+  }
+  
+  .menu-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .menu-column ul li a:hover {
+    color: #fff;
+  }
+  
+  .copyright-section {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    font-size: 0.8rem;
+  }
+  

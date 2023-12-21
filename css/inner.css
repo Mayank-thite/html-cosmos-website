@@ -1,0 +1,180 @@
+/* Mayank Thite #8835161 */
+
+/* hero section */
+.hero {
+    position: relative;
+    background-image: url('../images/inner-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.inner-page-title {
+    color: #fff;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* text - video section  */
+
+.text-video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+    background-color: #f9f9f9;
+}
+
+.text-side,
+.video-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-side h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text-side p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.video-side video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* planet data table section  */
+
+.planet-data-section {
+    padding: 50px 30px;
+}
+
+.planet-data-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.planet-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.planet-table caption {
+    caption-side: top;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.planet-table th,
+.planet-table td {
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.planet-table th {
+    background-color: #003976;
+    font-weight: bold;
+    color: #fff;
+}
+
+table tr:nth-child(odd) {
+    background-color: #dcdcdc;
+}
+
+.planet-table th:first-child,
+.planet-table td:first-child {
+    text-align: left;
+}
+
+/* contact form section  */
+.form-section {
+    padding: 50px 0;
+}
+
+.form-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+select {
+    padding-right: 30px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003976;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"] {
+    background-color: #4b4b4b;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
