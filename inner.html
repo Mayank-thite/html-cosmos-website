@@ -1,0 +1,240 @@
+<!-- Mayank Thite #8835161 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/template.css" />
+    <link rel="stylesheet" href="./css/inner.css" />
+    <title>In-depth Cosmos</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  </head>
+  <body>
+    <header>
+      <div class="above-header">
+        <a href="./">
+          <img src="./images/logo.png" alt="Logo" />
+        </a>
+        <h1>Our Cosmos by Mayank Thite</h1>
+        <p>mthite5161@conestogac.on.ca</p>
+      </div>
+      <nav>
+        <div class="menu">
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li class="submenu">
+              <a href="#">Inner Page</a>
+              <ul class="sub-menu">
+                <li><a href="./inner.html#video">Liftoff</a></li>
+                <li><a href="./inner.html#table">Planets</a></li>
+              </ul>
+            </li>
+            <li><a href="./index.html#explore">Explore</a></li>
+            <li><a href="./inner.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="inner-page-title">Discover Our Universe</h1>
+        </div>
+      </section>
+      <div class="container">
+        <section class="text-video-section">
+          <div class="text-side">
+            <h2>How our Space Journey Began</h2>
+            <!-- source: https://education.nationalgeographic.org/resource/history-space-exploration/ -->
+            <p>
+              Space exploration began with the launch of the Soviet satellite,
+              Sputnik 1, on October 4, 1957, marking humanity's first foray into
+              the cosmos. This achievement ignited the Space Race between the
+              United States and the Soviet Union, leading to milestones like
+              Yuri Gagarin's orbital flight in 1961 and the Apollo 11 moon
+              landing in 1969. These pioneering endeavors laid the foundation
+              for international collaboration, technological innovation, and the
+              continuous quest to explore outer space, unraveling the mysteries
+              of the universe and inspiring generations to reach beyond our
+              planet's boundaries.
+            </p>
+            <p>
+              The early space exploration efforts were characterized by rapid
+              advancements in rocketry and satellite technology. The launch of
+              unmanned spacecraft to explore the Moon, Venus, and Mars paved the
+              way for sending humans beyond Earth's atmosphere. The Apollo
+              program's successful moon landings not only expanded our
+              understanding of lunar geology but also demonstrated the potential
+              of human space travel. This era of exploration was a testament to
+              human determination and ingenuity, sparking a global fascination
+              with the cosmos and fostering a spirit of international
+              collaboration that continues to drive space exploration forward to
+              this day.
+            </p>
+          </div>
+          <div class="video-side" id="video">
+            <!-- source: https://www.pexels.com/photo/flight-sky-earth-space-2166/ -->
+            <video controls poster="./images/video-poster.jpg">
+              <!-- source: https://www.pexels.com/video/countdown-to-rocket-launching-854269/ -->
+              <source
+                src="./videos/countdown_to_rocket_launching (1080p).mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
+
+        <section class="planet-data-section">
+          <h2>Planetary Data</h2>
+          <!-- source: https://nssdc.gsfc.nasa.gov/planetary/factsheet/ -->
+          <table class="planet-table" id="table">
+            <caption>
+              Planetary Information
+            </caption>
+            <thead>
+              <tr>
+                <th>Planet</th>
+                <th>Mass (x 10<sup>24</sup> kg)</th>
+                <th>Number of Moons</th>
+                <th>Distance from Earth (million km)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mercury</td>
+                <td>0.33</td>
+                <td>0</td>
+                <td>91.7</td>
+              </tr>
+              <tr>
+                <td>Venus</td>
+                <td>4.87</td>
+                <td>0</td>
+                <td>41.4</td>
+              </tr>
+              <tr>
+                <td>Earth</td>
+                <td>5.97</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Mars</td>
+                <td>0.642</td>
+                <td>2</td>
+                <td>78.3</td>
+              </tr>
+              <tr>
+                <td>Jupiter</td>
+                <td>1898</td>
+                <td>79</td>
+                <td>628.7</td>
+              </tr>
+              <tr>
+                <td>Saturn</td>
+                <td>568</td>
+                <td>83</td>
+                <td>1275.0</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="form-section" id="contact">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Please enter your full name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Please enter an email address" required/>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select Country</option>
+              <optgroup label="Europe">
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="spain">Spain</option>
+              </optgroup>
+              <optgroup label="Asia">
+                <option value="china">India</option>
+                <option value="japan">Japan</option>
+                <option value="singapore">Singapore</option>
+              </optgroup>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Please provide a message" required></textarea>
+
+            <fieldset>
+              <legend>Preferred Contact Methods:</legend>
+              <label
+                ><input type="checkbox" name="contact" value="email"/>
+                Email</label
+              >
+              <label
+                ><input type="checkbox" name="contact" value="phone" />
+                Phone</label
+              >
+              <label
+                ><input type="checkbox" name="contact" value="mail" />
+                Mail</label
+              >
+            </fieldset>
+
+            <fieldset>
+              <legend>How did you hear about us?</legend>
+              <label
+                ><input type="radio" name="source" value="social-media" />
+                Social Media</label
+              >
+              <label
+                ><input type="radio" name="source" value="friend" />
+                Friend</label
+              >
+            </fieldset>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="menu-section">
+        <div class="menu-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="#">Inner Page</a></li>
+            <li><a href="./inner.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-column">
+          <h3>Info</h3>
+          <ul>
+            <li><a href="./inner.html#table">Planets</a></li>
+            <li><a href="./inner.html#video">Liftoff</a></li>
+            <li><a href="./title.html">Submission</a></li>
+          </ul>
+        </div>
+        <div class="menu-column">
+          <h3>More</h3>
+          <ul>
+            <li><a href="./index.html#nebula">Nebula</a></li>
+            <li><a href="./index.html#explore">Explore</a></li>
+            <li><a href="./index.html#discover">Discover</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="copyright-section">
+        <p>
+          &copy; 2023 Copyright | Created by Mayank Thite -
+          mthite5161@conestogac.on.ca
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
